@@ -5,7 +5,7 @@
     #include <math.h>
 
 
-    inline QString valor_Hex(int valor)
+    inline QString valor_Hex(const int& valor)
     {
         if(valor < 10)
         {
@@ -17,7 +17,7 @@
         }
     };
 
-    inline QString recursivadecimal(const int valor){
+    inline QString recursivadecimal(const int &valor){
         const int cociente = valor/16;
         const int residuo = valor%16;
 
@@ -36,7 +36,7 @@
     };
 
 
-    inline int valor_Dec(const QChar letra)
+    inline int valor_Dec(const QChar &letra)
     {
         if(letra >= '0' && letra <= '9')
         {
@@ -49,7 +49,7 @@
     };
 
 
-    inline int recursivahex(const QString &cadena, const int i = 0)
+    inline int recursivahex(const QString &cadena, const int &i = 0)
     {
         int j = cadena.length() - 1 - i;
         if (i == cadena.length())

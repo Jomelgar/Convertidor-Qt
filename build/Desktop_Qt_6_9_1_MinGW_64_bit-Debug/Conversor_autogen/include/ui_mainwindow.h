@@ -43,18 +43,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(800, 600);
-        MainWindow->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #3498db;\n"
-"    color: white;\n"
-"    border-radius: 8px;\n"
-"    padding: 5px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #2980b9;\n"
-"	font-size: 16px; \n"
-"    padding: 8px 14px;\n"
-"}\n"
-"\n"
+        MainWindow->setStyleSheet(QString::fromUtf8("\n"
 "/* ====== QLabel ====== */\n"
 "QLabel {\n"
 "    color: #2c3e50;\n"
@@ -65,6 +54,7 @@ public:
 "/* ====== QLineEdit ====== */\n"
 "QLineEdit {\n"
 "    background-color: #f8f9fa;\n"
+"	color: 'black';\n"
 "    border: 2px solid #bdc3c7;\n"
 "    border-radius: 6px;\n"
 "    padding: 6px;\n"
@@ -83,6 +73,7 @@ public:
 "    border-radius: 6px;\n"
 "    padding: 6px;\n"
 "    font-size: 14px;\n"
+"	color: #000000;\n"
 "}\n"
 "\n"
 "QTextEdit:focus {\n"
@@ -90,8 +81,7 @@ public:
 "    background-color: #ffffff;\n"
 "}\n"
 "\n"
-"/* ====== QRadioButton =="
-                        "==== */\n"
+"/* ====== QRadioButton ====== */\n"
 "QRadioButton {\n"
 "    spacing: 6px; /* separaci\303\263n entre el c\303\255rculo y el texto */\n"
 "    font-size: 14px;\n"
@@ -99,7 +89,8 @@ public:
 "}\n"
 "\n"
 "QRadioButton::indicator {\n"
-"    width: 16px;\n"
+"  "
+                        "  width: 16px;\n"
 "    height: 16px;\n"
 "    border: 2px solid #7f8c8d;\n"
 "    border-radius: 8px;\n"
@@ -119,12 +110,23 @@ public:
 "{\n"
 "	background-color: 'white';\n"
 "}\n"
-""));
+"\n"
+"QPushButton {\n"
+"    background-color: #3498db;\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 5px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #2980b9;\n"
+"	font-size: 16px; \n"
+"    padding: 8px 14px;\n"
+"}"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         lb_plain = new QLabel(centralwidget);
         lb_plain->setObjectName("lb_plain");
-        lb_plain->setGeometry(QRect(90, 70, 81, 20));
+        lb_plain->setGeometry(QRect(90, 70, 101, 20));
         lb_text = new QLabel(centralwidget);
         lb_text->setObjectName("lb_text");
         lb_text->setGeometry(QRect(90, 190, 101, 20));

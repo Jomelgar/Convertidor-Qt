@@ -14,18 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QPushButton {
-    background-color: #3498db;
-    color: white;
-    border-radius: 8px;
-    padding: 5px;
-}
-QPushButton:hover {
-    background-color: #2980b9;
-	font-size: 16px; 
-    padding: 8px 14px;
-}
-
+   <string notr="true">
 /* ====== QLabel ====== */
 QLabel {
     color: #2c3e50;
@@ -36,6 +25,7 @@ QLabel {
 /* ====== QLineEdit ====== */
 QLineEdit {
     background-color: #f8f9fa;
+	color: 'black';
     border: 2px solid #bdc3c7;
     border-radius: 6px;
     padding: 6px;
@@ -54,6 +44,7 @@ QTextEdit {
     border-radius: 6px;
     padding: 6px;
     font-size: 14px;
+	color: #000000;
 }
 
 QTextEdit:focus {
@@ -89,7 +80,18 @@ QWidget
 {
 	background-color: 'white';
 }
-</string>
+
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #2980b9;
+	font-size: 16px; 
+    padding: 8px 14px;
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="lb_plain">
@@ -97,7 +99,7 @@ QWidget
      <rect>
       <x>90</x>
       <y>70</y>
-      <width>81</width>
+      <width>101</width>
       <height>20</height>
      </rect>
     </property>
