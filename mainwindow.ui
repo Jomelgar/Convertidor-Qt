@@ -22,7 +22,74 @@
 }
 QPushButton:hover {
     background-color: #2980b9;
-}</string>
+	font-size: 16px; 
+    padding: 8px 14px;
+}
+
+/* ====== QLabel ====== */
+QLabel {
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ====== QLineEdit ====== */
+QLineEdit {
+    background-color: #f8f9fa;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3498db;
+    background-color: #ffffff;
+}
+
+/* ====== QTextEdit ====== */
+QTextEdit {
+    background-color: #f8f9fa;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QTextEdit:focus {
+    border: 2px solid #3498db;
+    background-color: #ffffff;
+}
+
+/* ====== QRadioButton ====== */
+QRadioButton {
+    spacing: 6px; /* separación entre el círculo y el texto */
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #7f8c8d;
+    border-radius: 8px;
+    background-color: white;
+}
+
+QRadioButton::indicator:checked {
+    border: 2px solid #3498db;
+    background-color: #3498db;
+}
+
+QRadioButton::indicator:hover {
+    border: 2px solid #2980b9;
+}
+
+QWidget
+{
+	background-color: 'white';
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="lb_plain">
