@@ -25,6 +25,8 @@ private slots:
 
     void on_pb_accept_clicked();
 
+    void on_rb_bin_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

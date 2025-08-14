@@ -133,45 +133,6 @@ QPushButton:hover {
      <string>Aceptar</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="rb_dec">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>100</y>
-      <width>121</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Hexadecimal</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="rb_hex">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>130</y>
-      <width>131</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Decimal</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>70</y>
-      <width>111</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Convertir A:</string>
-    </property>
-   </widget>
    <widget class="QTextEdit" name="te_text">
     <property name="geometry">
      <rect>
@@ -191,6 +152,130 @@ QPushButton:hover {
       <height>28</height>
      </rect>
     </property>
+   </widget>
+   <widget class="QWidget" name="w_conv" native="true">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>70</y>
+      <width>161</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <widget class="QRadioButton" name="rb_bin">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Binario</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rb_hex">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Decimal</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rb_dec">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>121</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hexadecimal</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Convertir A:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="w_value" native="true">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>70</y>
+      <width>161</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <widget class="QRadioButton" name="rb_bin_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Binario</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rb_hex_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Decimal</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rb_dec_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>121</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hexadecimal</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Convertir A:</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

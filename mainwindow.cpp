@@ -36,10 +36,16 @@ void MainWindow::on_pb_accept_clicked()
         QString valor = recursivadecimal(ui->le_plain->text().toInt());
          ui->te_text->setText(valor);
     }
-    else
+    else if(ui->rb_hex->isChecked())
     {
         int valor = recursivahex(ui->le_plain->text());
         ui->te_text->setText(QString::number(valor));
     }
+}
+
+void MainWindow::on_rb_bin_clicked()
+{
+    ui->lb_plain->setText("Decimal:");
+    ui->lb_text->setText("Binario:");
 }
 
