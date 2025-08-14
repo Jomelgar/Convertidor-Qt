@@ -49,14 +49,15 @@
     };
 
 
-    inline int recursivahex(const QString cadena, const int i=0)
+    inline int recursivahex(const QString &cadena, const int i = 0)
     {
-        if(i == cadena.length())
+        int j = cadena.length() - 1 - i;
+        if (i == cadena.length())
         {
             return 0;
         }
 
-        return (valor_Dec(cadena[0]) * std::pow(16,i)) + recursivahex(cadena,i+1);
-    };
+        return (valor_Dec(cadena[j]) * std::pow(16, i)) + recursivahex(cadena, i + 1);
+    }
 
     #endif // CONVERSOR_H

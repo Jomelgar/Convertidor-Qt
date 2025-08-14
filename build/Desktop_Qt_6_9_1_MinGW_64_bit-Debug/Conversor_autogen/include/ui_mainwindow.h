@@ -43,6 +43,15 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(800, 600);
+        MainWindow->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #3498db;\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 5px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #2980b9;\n"
+"}"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         lb_plain = new QLabel(centralwidget);
@@ -56,7 +65,7 @@ public:
         pb_accept->setGeometry(QRect(360, 450, 90, 29));
         rb_dec = new QRadioButton(centralwidget);
         rb_dec->setObjectName("rb_dec");
-        rb_dec->setGeometry(QRect(450, 100, 111, 25));
+        rb_dec->setGeometry(QRect(450, 100, 121, 25));
         rb_hex = new QRadioButton(centralwidget);
         rb_hex->setObjectName("rb_hex");
         rb_hex->setGeometry(QRect(450, 130, 131, 25));
@@ -89,8 +98,8 @@ public:
         lb_plain->setText(QCoreApplication::translate("MainWindow", "Decimal:", nullptr));
         lb_text->setText(QCoreApplication::translate("MainWindow", "Hexadecimal:", nullptr));
         pb_accept->setText(QCoreApplication::translate("MainWindow", "Aceptar", nullptr));
-        rb_dec->setText(QCoreApplication::translate("MainWindow", "Decimal", nullptr));
-        rb_hex->setText(QCoreApplication::translate("MainWindow", "Hexadecimal", nullptr));
+        rb_dec->setText(QCoreApplication::translate("MainWindow", "Hexadecimal", nullptr));
+        rb_hex->setText(QCoreApplication::translate("MainWindow", "Decimal", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Convertir A:", nullptr));
     } // retranslateUi
 

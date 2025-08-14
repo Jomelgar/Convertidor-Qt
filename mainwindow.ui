@@ -13,6 +13,17 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #2980b9;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="lb_plain">
     <property name="geometry">
@@ -58,12 +69,12 @@
      <rect>
       <x>450</x>
       <y>100</y>
-      <width>111</width>
+      <width>121</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>Decimal</string>
+     <string>Hexadecimal</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="rb_hex">
@@ -76,7 +87,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Hexadecimal</string>
+     <string>Decimal</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
